@@ -7,25 +7,29 @@ namespace PatternsRefresh
     {
         static void Main(string[] args)
         {
-            #region Mediator Design Pattern
+            bool RunMediatorDesignPattern = true;
             
             //LD STEP006
-            Mediator lucaMediator = new Mediator();
-            
-            ColleagueOne c1 = new ColleagueOne(lucaMediator);
-            lucaMediator.c1 = c1;
+            #region Mediator Design Pattern
+            if (RunMediatorDesignPattern)
+            { 
+                Mediator lucaMediator = new Mediator(); //LD creation instance of "Mediator"
+                
+                ColleagueOne c1 = new ColleagueOne(lucaMediator); //LD creation of concrete instance of "Coleague", need to pass "Mediator" instance
+                lucaMediator.c1 = c1; //LD set "c1" in concrete "Mediator" instance
 
-            ColleagueTwo c2 = new ColleagueTwo(lucaMediator);
-            lucaMediator.c2 = c2;
+                ColleagueTwo c2 = new ColleagueTwo(lucaMediator);
+                lucaMediator.c2 = c2;
 
-            ColleagueThree c3 = new ColleagueThree(lucaMediator);
-            lucaMediator.c3 = c3;
+                ColleagueThree c3 = new ColleagueThree(lucaMediator);
+                lucaMediator.c3 = c3;
 
-            c1.Send("msg001");
-            c2.Send("msg002");
+                //LD test of "Mediator" logic
+                c1.Send("msg001");
+                c2.Send("msg002");
 
-            Console.ReadLine();
-
+                Console.ReadLine();
+            }
             #endregion
         }
     }
