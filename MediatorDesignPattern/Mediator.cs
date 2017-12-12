@@ -20,7 +20,6 @@ namespace MediatorDesignPattern
                 c3.Receive(msg);
             }
 
-
             if (caller == c2)//else
                 c1.Receive(msg);
         }
