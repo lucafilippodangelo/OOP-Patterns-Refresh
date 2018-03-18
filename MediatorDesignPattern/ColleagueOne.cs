@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MediatorDesignPattern
 {
-    //LD STEP005 any concrete "Colleague" class can "Send" and "Receive" messages from the "Mediator".
+    //LD_MEDIATOR_005 any concrete "Colleague" class can "Send" and "Receive" messages from the "Mediator".
     // the class use a referement to "Mediator" 
     public class ColleagueOne : ColleagueAbstract
     {

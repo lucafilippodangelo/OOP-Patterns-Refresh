@@ -8,23 +8,12 @@ namespace FactoryDesignPattern
 
         static void Main(string[] args)
         {
-            Console.WriteLine("East Coast Customer:");
-            //LDF001 we can abstract out the BookStore as an interface and have more types of bookstores
-            IBookStore bookstore = new BookStoreA(CustomerLocation.EastCoast);
-            ShipBook(bookstore);
 
-            Console.WriteLine("Mid West Customer:");
-            bookstore = new BookStoreA(CustomerLocation.MidWest);
-            ShipBook(bookstore);
-
-            Console.WriteLine("West Coast Customer:");
-            bookstore = new BookStoreA(CustomerLocation.WestCoast);
-            ShipBook(bookstore);
         }
 
         //LDF002 client code does not need to be changed if the logic for choosing the distributor
         // in each BookStore will change
-        private static void ShipBook(IBookStore s)
+        public static void ShipBook(IBookStore s)
         {
             /*
              The key is your customer should not care which distributor you choose because they will get their books
