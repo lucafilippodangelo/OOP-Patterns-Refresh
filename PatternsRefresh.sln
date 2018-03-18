@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternsRefresh", "PatternsRefresh\PatternsRefresh.csproj", "{6DB7A6CC-D96C-4EFC-8643-3D2AEBDB580D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorDesignPattern", "MediatorDesignPattern\MediatorDesignPattern.csproj", "{BE60F167-B8D1-4F73-8DD7-28B54955C641}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryDesignPattern", "AbstractFactoryDesignPattern\AbstractFactoryDesignPattern.csproj", "{5A122C7F-2C55-41E4-AEA9-34666E4900DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactoryDesignPattern", "AbstractFactoryDesignPattern\AbstractFactoryDesignPattern.csproj", "{5A122C7F-2C55-41E4-AEA9-34666E4900DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryDesignPattern", "FactoryDesignPattern\FactoryDesignPattern.csproj", "{F826B983-AFEA-46B9-B18B-9E28D6BB0151}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryDesignPattern", "FactoryDesignPattern\FactoryDesignPattern.csproj", "{F826B983-AFEA-46B9-B18B-9E28D6BB0151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonDesignPattern", "SingletonDesignPattern\SingletonDesignPattern.csproj", "{BDFD9F36-4B1F-469D-9D6F-D0DDE4A635A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F826B983-AFEA-46B9-B18B-9E28D6BB0151}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F826B983-AFEA-46B9-B18B-9E28D6BB0151}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F826B983-AFEA-46B9-B18B-9E28D6BB0151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDFD9F36-4B1F-469D-9D6F-D0DDE4A635A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDFD9F36-4B1F-469D-9D6F-D0DDE4A635A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDFD9F36-4B1F-469D-9D6F-D0DDE4A635A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDFD9F36-4B1F-469D-9D6F-D0DDE4A635A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
