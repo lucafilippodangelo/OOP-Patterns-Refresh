@@ -1,17 +1,19 @@
 # Patterns Refresh
 Real reason why I'm implementing this is to remember that patterns are not just for interviews!
+
 This project to refresh a set of probable working solutions for particular recurring problems.
+
 **Note** Download the code and search by labels as "//LD_MEDIATOR_002" to match description and code.
 
 ## Creational Patterns - Creation of objects and classes
 
-### Abstract Factory
+### Creational - Abstract Factory
 Abstract Factory, Creates an instance of several families of classes
 
-### Builder
+### Creational - Builder
 Separates object construction from its representation
 
-### Factory
+### Creational - Factory Method
 It is used to create objects.
 In Factory pattern, we create object without exposing the creation logic. 
 In this pattern, an interface is used for creating an object, but let subclass 
@@ -30,51 +32,51 @@ RESOURCES
 - http://www.dofactory.com/net/factory-method-design-pattern
 - http://www.dotnetlead.com/design-patterns/factory-method
 
-### Prototype
+### Creational - Prototype
 A fully initialized instance to be copied or cloned
 
-### Singleton - //LD_SINGLETON_000
+### Creational - Singleton - //LD_SINGLETON_000
 Ensure a class has only one instance and provide a global point of access to it.
 Singleton pattern creates a class which can have a single object throughout the application, so that whenever any other object tries to access the object of the class, it will access the same object always.
 
 ## Structural Patterns - Class and Object Composition
 
-### Adapter
+### Structural - Adapter
 Match interfaces of different classes
 
-### Bridge
+### Structural - Bridge
 Separates an object’s interface from its implementation
 
-### Composite
+### Structural - Composite
 A tree structure of simple and composite objects
 
-### Decorator
+### Structural - Decorator
 Add responsibilities to objects dynamically
 
-### Facade
+### Structural - Facade
 A single class that represents an entire subsystem
 
-### Flyweight
+### Structural - Flyweight
 A fine-grained instance used for efficient sharing
 
-### Proxy
+### Structural - Proxy
 An object representing another object
 
 ## Behavioral Patterns - Communication between class and objects
 
-### Chain of Responsability
+### Behavioral- Chain of Responsability
 A way of passing a request between a chain of objects
 
-### Command
+### Behavioral- Command
 Encapsulate a command request as an object
 
-### Interpreter
+### Behavioral- Interpreter
 A way to include language elements in a program
 
-### Iterator
+### Behavioral- Iterator
 Sequentially access the elements of a collection
 
-### Mediator //LD_MEDIATOR_000
+### Behavioral- Mediator //LD_MEDIATOR_000
 This pattern allows multiple objects to communicate with each other’s without knowing each other’s structure. 
 The mediator pattern is a behavioral design pattern that promotes loose coupling between objects and helps to organize the code for inter-object communications.
 
@@ -103,20 +105,20 @@ Execution of the test:
 
 Example to Implement in .net Core --> https://www.stevejgordon.co.uk/cqrs-using-mediatr-asp-net-core
 
-### Memento
+### Behavioral- Memento
 Capture and restore an object's internal state
 
-### Observer
+### Behavioral- Observer
 A way of notifying change to a number of classes
 
-### State
+### Behavioral- State
 Alter an object's behavior when its state changes
 
-### Strategy
+### Behavioral- Strategy
 Encapsulates an algorithm inside a class
 
-### Template Method
+### Behavioral- Template Method
 Method	Defer the exact steps of an algorithm to a subclass
 
-### Visitor
+### Behavioral- Visitor
 Defines a new operation to a class without change
