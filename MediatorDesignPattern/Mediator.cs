@@ -6,6 +6,8 @@ namespace MediatorDesignPattern
 {
     public class Mediator : IMediator
     {
+        public static void Main(string[] args) { }
+
         //LD_MEDIATOR_002 the concrete "Mediator" has referiment to the objects that need to communicate
         public ColleagueOne c1 { get; set; }
         public ColleagueTwo c2 { get; set; }

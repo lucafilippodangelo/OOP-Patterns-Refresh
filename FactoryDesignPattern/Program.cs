@@ -6,7 +6,7 @@ namespace FactoryDesignPattern
     {
         public enum CustomerLocation { EastCoast, MidWest, WestCoast }
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
         }

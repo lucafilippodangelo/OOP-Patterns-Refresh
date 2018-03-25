@@ -6,6 +6,8 @@ namespace SingletonCreationalPattern
 {
     public sealed class Singleton
     {
+        public static void Main(string[] args) {}
+
         private static Singleton _instance = null;
         private static object syncLock = new object();// Lock synchronization object
 

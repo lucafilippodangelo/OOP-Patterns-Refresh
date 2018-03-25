@@ -2,12 +2,13 @@
 using MediatorDesignPattern;
 using SingletonCreationalPattern;
 using System;
+using static FactoryDesignPattern.Program;
 
 namespace PatternsRefresh
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //RunMediatorDesignPattern(); //LD_MEDIATOR_000
             //RunSingletonDesignPattern(); //LD_SINGLETON_000
@@ -52,7 +53,7 @@ namespace PatternsRefresh
         //LD_FACTORY_000
         public static void RunFactoryDesignPattern()
         {
-            /*
+            
             Console.WriteLine("East Coast Customer:");
             //LDF001 we can abstract out the BookStore as an interface and have more types of bookstores
             IBookStore bookstore = new BookStoreA(CustomerLocation.EastCoast);
@@ -67,7 +68,6 @@ namespace PatternsRefresh
             ShipBook(bookstore);
 
             Console.ReadKey();
-            */
         }
 
     }//LD end Program

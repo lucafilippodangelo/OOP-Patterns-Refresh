@@ -3,80 +3,84 @@ Real reason why I'm implementing this is to remember that patterns are not just 
 
 This project to refresh a set of probable working solutions for particular recurring problems.
 
-**Note** Download the code and search by labels as "//LD_MEDIATOR_002" to match description and code.
+**Note** Download the full solution and search by labels as "//LD_MEDIATOR_002" to match description and code.
 
-## Creational Patterns - Creation of objects and classes
+## CREATIONAL patterns - Creation of objects and classes
 
-### Creational - Abstract Factory
+### -> Creational - Abstract Factory
 Abstract Factory, Creates an instance of several families of classes
 
-### Creational - Builder
+### -> Creational - Builder
 Separates object construction from its representation
 
-### Creational - Factory Method
+### -> Creational - Factory Method - //LD_FACTORY_000
 It is used to create objects.
-In Factory pattern, we create object without exposing the creation logic. 
 In this pattern, an interface is used for creating an object, but let subclass 
 decide which class to instantiate.
 
 The benefit is that the client code(calling code) can just say "give me an object that 
 can do XYZ" without knowing what is the actual class that can do "XYZ". 
 
-EXAMPLE:
+Example:
 the factory method that returns a product(a distributor).  Each of the distributor implements 
 the IDistributor interface, which has the ShipBook method. The client code just say 
 "give me a distributor that can ShipBook" without having to know which distributor you 
 are going to return.
 
-RESOURCES
+Project Structure:
+- //LDF001 The flow starts from here, the abstraction of the objects to create.
+- //LDF002 client code does not need to be changed if the logic for choosing the distributor in each BookStore will change
+- //LDF003 the client code don’t need to care which distributor is being created, and this is the key to the factory method pattern.
+
+Resources:
 - http://www.dofactory.com/net/factory-method-design-pattern
 - http://www.dotnetlead.com/design-patterns/factory-method
 
-### Creational - Prototype
+### -> Creational - Prototype
 A fully initialized instance to be copied or cloned
 
-### Creational - Singleton - //LD_SINGLETON_000
+### -> Creational - Singleton - //LD_SINGLETON_000
 Ensure a class has only one instance and provide a global point of access to it.
 Singleton pattern creates a class which can have a single object throughout the application, so that whenever any other object tries to access the object of the class, it will access the same object always.
 
-## Structural Patterns - Class and Object Composition
+## STRUCTURAL Patterns - Class and Object Composition
 
-### Structural - Adapter
+### -> Structural - Adapter
 Match interfaces of different classes
 
-### Structural - Bridge
+### -> Structural - Bridge
 Separates an object’s interface from its implementation
 
-### Structural - Composite
+### -> Structural - Composite
 A tree structure of simple and composite objects
 
-### Structural - Decorator
+### -> Structural - Decorator
 Add responsibilities to objects dynamically
 
-### Structural - Facade
+### -> Structural - Facade
 A single class that represents an entire subsystem
 
-### Structural - Flyweight
+### -> Structural - Flyweight
 A fine-grained instance used for efficient sharing
 
-### Structural - Proxy
+### -> Structural - Proxy
 An object representing another object
 
-## Behavioral Patterns - Communication between class and objects
+## BEHAVIORAL Patterns - Communication between class and objects
 
-### Behavioral- Chain of Responsability
+### -> Behavioral- Chain of Responsability
 A way of passing a request between a chain of objects
 
-### Behavioral- Command
+### -> Behavioral- Command
 Encapsulate a command request as an object
 
-### Behavioral- Interpreter
+### -> Behavioral- Interpreter
 A way to include language elements in a program
 
-### Behavioral- Iterator
+### -> Behavioral- Iterator
 Sequentially access the elements of a collection
 
-### Behavioral- Mediator //LD_MEDIATOR_000
+### -> Behavioral- Mediator //LD_MEDIATOR_000
 This pattern allows multiple objects to communicate with each other’s without knowing each other’s structure. 
 The mediator pattern is a behavioral design pattern that promotes loose coupling between objects and helps to organize the code for inter-object communications.
 
@@ -105,20 +109,20 @@ Execution of the test:
 
 Example to Implement in .net Core --> https://www.stevejgordon.co.uk/cqrs-using-mediatr-asp-net-core
 
-### Behavioral- Memento
+### -> Behavioral- Memento
 Capture and restore an object's internal state
 
-### Behavioral- Observer
+### -> Behavioral- Observer
 A way of notifying change to a number of classes
 
-### Behavioral- State
+### -> Behavioral- State
 Alter an object's behavior when its state changes
 
-### Behavioral- Strategy
+### -> Behavioral- Strategy
 Encapsulates an algorithm inside a class
 
-### Behavioral- Template Method
+### -> Behavioral- Template Method
 Method	Defer the exact steps of an algorithm to a subclass
 
-### Behavioral- Visitor
+### -> Behavioral- Visitor
 Defines a new operation to a class without change
