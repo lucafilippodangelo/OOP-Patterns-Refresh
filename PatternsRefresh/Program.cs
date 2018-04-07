@@ -1,4 +1,5 @@
 ﻿using FactoryDesignPattern;
+using AbstractFactoryDesignPattern;
 using MediatorDesignPattern;
 using SingletonCreationalPattern;
 using System;
@@ -54,18 +55,17 @@ namespace PatternsRefresh
         //LD_FACTORY_000
         public static void RunFactoryDesignPattern()
         {
-            
             Console.WriteLine("East Coast Customer:");
             //LDF001 we can abstract out the BookStore as an interface and have more types of bookstores
-            IBookStore bookstore = new BookStoreA(CustomerLocation.EastCoast);
+            FactoryDesignPattern.IBookStore bookstore = new FactoryDesignPattern.BookStoreA(FactoryDesignPattern.Program.CustomerLocation.EastCoast);
             ShipBook(bookstore);
 
             Console.WriteLine("Mid West Customer:");
-            bookstore = new BookStoreA(CustomerLocation.MidWest);
+            bookstore = new FactoryDesignPattern.BookStoreA(FactoryDesignPattern.Program.CustomerLocation.MidWest);
             ShipBook(bookstore);
 
             Console.WriteLine("West Coast Customer:");
-            bookstore = new BookStoreA(CustomerLocation.WestCoast);
+            bookstore = new FactoryDesignPattern.BookStoreA(FactoryDesignPattern.Program.CustomerLocation.WestCoast);
             ShipBook(bookstore);
 
             Console.ReadKey();
@@ -74,7 +74,20 @@ namespace PatternsRefresh
         //LD_ABSTRACT_FACTORY_000
         public static void RunAbstractFactoryDesignPattern()
         {
+            //LDAF001
+            AbstractFactoryDesignPattern.IBookStore storeA = new AbstractFactoryDesignPattern.BookStoreA(AbstractFactoryDesignPattern.CustomerLocation.EastCoast);
+            Console.WriteLine("Book Store A with a customer from East Coast:");
 
+            //LDAF002
+            AbstractFactoryDesignPattern.Program.ShipBook(storeA);
+            AbstractFactoryDesignPattern.Program.Advertise(storeA);
+
+            AbstractFactoryDesignPattern.IBookStore storeB = new BookStoreB(AbstractFactoryDesignPattern.CustomerLocation.WestCoast);
+            Console.WriteLine("Book Store B with a customer from West Coast:");
+            AbstractFactoryDesignPattern.Program.ShipBook(storeB);
+            AbstractFactoryDesignPattern.Program.Advertise(storeB);
+
+            Console.ReadKey();
         }
 
         }//LD end Program

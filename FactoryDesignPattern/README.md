@@ -1,9 +1,6 @@
 # Factory
-### Creational - Factory Method - //LD_FACTORY_000
-
-It is used to create objects.
-In this pattern, an interface is used for creating an object, but let subclass 
-decide which class to instantiate.
+## Creational - Factory Method - //LD_FACTORY_000
+### It is used to create objects. In this pattern, an interface is used for creating an object, but let subclass decide which class to instantiate.
 
 The benefit is that the client code(calling code) can just say "give me an object that 
 can do XYZ" without knowing what is the actual class that can do "XYZ". 

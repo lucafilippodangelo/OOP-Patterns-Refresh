@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AbstractFactoryDesignPattern\AbstractFactoryDesignPattern.csproj" />
     <ProjectReference Include="..\FactoryDesignPattern\FactoryDesignPattern.csproj" />
     <ProjectReference Include="..\MediatorDesignPattern\MediatorDesignPattern.csproj" />
     <ProjectReference Include="..\SingletonDesignPattern\SingletonCreationalPattern.csproj" />
