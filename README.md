@@ -7,9 +7,6 @@ This project to refresh a set of probable working solutions for particular recur
 
 ## CREATIONAL PATTERNS - Creation of Objects and Classes
 
-### -> Creational - Builder
-Separates object construction from its representation
-
 ### -> Creational - Prototype
 A fully initialized instance to be copied or cloned
 

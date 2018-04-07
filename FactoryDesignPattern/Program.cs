@@ -6,10 +6,7 @@ namespace FactoryDesignPattern
     {
         public enum CustomerLocation { EastCoast, MidWest, WestCoast }
 
-        public static void Main(string[] args)
-        {
-
-        }
+        public static void Main(string[] args) {}
 
         //LDF002 client code does not need to be changed if the logic for choosing the distributor
         // in each BookStore will change

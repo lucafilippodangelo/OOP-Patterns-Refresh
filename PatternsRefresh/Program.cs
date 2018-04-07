@@ -4,6 +4,7 @@ using MediatorDesignPattern;
 using SingletonCreationalPattern;
 using System;
 using static FactoryDesignPattern.Program;
+using BuilderCreationalPattern;
 
 namespace PatternsRefresh
 {
@@ -14,7 +15,10 @@ namespace PatternsRefresh
             //RunMediatorDesignPattern(); //LD_MEDIATOR_000
             //RunSingletonDesignPattern(); //LD_SINGLETON_000
             //RunFactoryDesignPattern(); //LD_FACTORY_000
-            RunAbstractFactoryDesignPattern(); //LD_ABSTRACT_FACTORY_000
+            //RunAbstractFactoryDesignPattern(); //LD_ABSTRACT_FACTORY_000
+            RunBuilderCreationalPattern(); //LD_BUILDER_000
+
+            Console.ReadLine();
         }
 
         //LD_MEDIATOR_000
@@ -33,8 +37,6 @@ namespace PatternsRefresh
             //LD test of "Mediator" logic
             c1.Send("msg001");
             c2.Send("msg002");
-
-            Console.ReadLine();
         }
 
         //LD_SINGLETON_000
@@ -48,8 +50,6 @@ namespace PatternsRefresh
             {
                 Console.WriteLine("Objects are the same instance");
             }
-
-            Console.ReadKey();
         }
 
         //LD_FACTORY_000
@@ -67,8 +67,6 @@ namespace PatternsRefresh
             Console.WriteLine("West Coast Customer:");
             bookstore = new FactoryDesignPattern.BookStoreA(FactoryDesignPattern.Program.CustomerLocation.WestCoast);
             ShipBook(bookstore);
-
-            Console.ReadKey();
         }
 
         //LD_ABSTRACT_FACTORY_000
@@ -77,18 +75,34 @@ namespace PatternsRefresh
             //LDAF001
             AbstractFactoryDesignPattern.IBookStore storeA = new AbstractFactoryDesignPattern.BookStoreA(AbstractFactoryDesignPattern.CustomerLocation.EastCoast);
             Console.WriteLine("Book Store A with a customer from East Coast:");
-
             //LDAF002
             AbstractFactoryDesignPattern.Program.ShipBook(storeA);
             AbstractFactoryDesignPattern.Program.Advertise(storeA);
 
+            //LD identical situation for advertisement
             AbstractFactoryDesignPattern.IBookStore storeB = new BookStoreB(AbstractFactoryDesignPattern.CustomerLocation.WestCoast);
             Console.WriteLine("Book Store B with a customer from West Coast:");
             AbstractFactoryDesignPattern.Program.ShipBook(storeB);
             AbstractFactoryDesignPattern.Program.Advertise(storeB);
-
-            Console.ReadKey();
         }
 
-        }//LD end Program
+        //LD_BUILDER_000
+        public static void RunBuilderCreationalPattern()
+        {
+            Director d = new Director();
+
+            Console.WriteLine("Build a jet airplane");
+            Airplane a = d.BuildAirplane(new JetManufacturer());
+            a.Show();
+
+            Console.WriteLine("Build a propeller airplane");
+            Airplane b = d.BuildAirplane(new PropellerManufacturer());
+            b.Show();
+        }
+
+        
+
+
+
+    }//LD end Program
 }//LD close namespace
