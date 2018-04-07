@@ -1,5 +1,5 @@
 # Factory
-###Creational - Factory Method - //LD_FACTORY_000
+### Creational - Factory Method - //LD_FACTORY_000
 
 It is used to create objects.
 In this pattern, an interface is used for creating an object, but let subclass 

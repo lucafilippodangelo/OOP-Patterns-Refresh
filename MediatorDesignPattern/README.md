@@ -1,4 +1,5 @@
-# Behavioral- Mediator //LD_MEDIATOR_000
+# Mediator
+### Behavioral- Mediator //LD_MEDIATOR_000
 
 This pattern allows multiple objects to communicate with each other’s without knowing each other’s structure. 
 The mediator pattern is a behavioral design pattern that promotes loose coupling between objects and helps to organize the code for inter-object communications.
