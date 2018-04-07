@@ -92,6 +92,7 @@ namespace PatternsRefresh
             Director d = new Director();
 
             Console.WriteLine("Build a jet airplane");
+            //LDB004
             Airplane a = d.BuildAirplane(new JetManufacturer());
             a.Show();
 
