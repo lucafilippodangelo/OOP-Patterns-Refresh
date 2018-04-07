@@ -12,7 +12,8 @@ namespace PatternsRefresh
         {
             //RunMediatorDesignPattern(); //LD_MEDIATOR_000
             //RunSingletonDesignPattern(); //LD_SINGLETON_000
-            RunFactoryDesignPattern(); //LD_FACTORY_000
+            //RunFactoryDesignPattern(); //LD_FACTORY_000
+            RunAbstractFactoryDesignPattern(); //LD_ABSTRACT_FACTORY_000
         }
 
         //LD_MEDIATOR_000
@@ -70,5 +71,11 @@ namespace PatternsRefresh
             Console.ReadKey();
         }
 
-    }//LD end Program
+        //LD_ABSTRACT_FACTORY_000
+        public static void RunAbstractFactoryDesignPattern()
+        {
+
+        }
+
+        }//LD end Program
 }//LD close namespace
