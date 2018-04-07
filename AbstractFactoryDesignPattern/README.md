@@ -1,14 +1,31 @@
-# Builder
-## Creational - Builder -  //LD_BUILDER_000
-### Separates object construction from its representation
+# Abstract Factory
+### Creational - Abstract Factory
 
-This creational pattern allows to create a general guideline on how to create an object, then have different implementations on how to build parts of the object. 
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+Abstract Factory is merely an extension of the factory method pattern, which allows to create objects without being concerned about the actual class of the objects being produced. 
+The abstract factory pattern extends the factory method pattern by allowing more types of objects to be produced.
 
-There are 2 principles in the builder pattern, let's use an example of building an airplane to demonstrate the principles:- 
-- //LDB001 PRIORITY -> The first principle is the general guideline that must be followed when building an object. For example, in building an airplane the body must be constructed before the wings. This general guideline must be followed regardless what types of airplane you are building. 
-- //LDB002, //LDB003 SPECIFICATIONS -> The second principle are the different specifications on building the parts of the airplane. When building a jet airplane the body must be built differently than a propeller airplane. These specifications are included in the pattern.  
+Description:
+this project consists on some changes on the project https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/FactoryDesignPattern
+I extend the factory method pattern to the abstract factory pattern by:                                                  
+- Adding another product that the factories can produce. In this example we will add Advertisers that helps the bookstores advertise their stores online. 
+- Each bookstore can then choose their own distributors and advertisers inside their own GetDistributor and GetAdvertiser method. 
 
-The **Client code** is just //LDB004
+//LDAF001 
+declaration of a concrete factory, this decide the concrete element to instanciate.
+So when the client goes in the shop and order a book, let the book store decide for who will be the distributor and the advertiser, depending on the customer location.
+
+//LDAF002
+The client order to a specific shop a book to be shipped and advertised.
+
+//LDAF003, //LDAF004
+The book is shipped and advertised, so we have the concrete products //LDAF005,//LDAF006
+
+//LDAF007 - THE CORE
+Notice that regardless if you pass in BookStoreA or BookStoreB into the method above, this client code does not need to be changed since it will get the correct advertiser automatically using the internal logics within the factories. It is the factories (BookStoreA and BookStoreB) that determines which advertiser to produce. The same goes for choosing which book distributor to produce.
+
+The benefit of the Abstract Factory pattern is that it allows you to create a groups of products(the distributors and the advertisers) without having to know the actual class of the product being produced. The result is that you can have client code that does not need to be changed when  the internal logic of the factories on which product to produce changed.
 
 ### Resources:
-- http://www.dotnetlead.com/design-patterns/builder
+- MAIN -> http://www.dotnetlead.com/design-patterns/abstract-factory
+- http://www.dofactory.com/net/abstract-factory-design-pattern

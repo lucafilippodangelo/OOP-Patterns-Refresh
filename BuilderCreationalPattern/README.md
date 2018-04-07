@@ -17,6 +17,5 @@ You can have different implementation of the manufacturers on how the parts of a
 The benefit of the builder pattern is that you can swap out any implementations on how the parts are built by changing the manufactures, and the rest of the client code will not need to be changed.
 
 In application frameworks today we often see the builder pattern being utilized. For example, you may have multiple configuration files that have information on database services, file location services, and notification services. These configuration files would be your manufactures, where each have their own specifications on how each part of the configuration object should be built. The director would specify the way to read the configuration file, for example you may need to read the database services first before you read the notification services.
-
 ### Resources:
 - http://www.dotnetlead.com/design-patterns/builder
