@@ -6,6 +6,8 @@ using System;
 using static FactoryDesignPattern.Program;
 using BuilderCreationalPattern;
 using PrototypeCreationalPattern;
+using AdapterStructuralPattern;
+using System.Collections.Generic;
 
 namespace PatternsRefresh
 {
@@ -19,6 +21,8 @@ namespace PatternsRefresh
             //RunAbstractFactoryDesignPattern(); //LD_ABSTRACT_FACTORY_000
             //RunBuilderCreationalPattern(); //LD_BUILDER_000
             //RunPrototypeCreationalPattern(); //LD_PROTOTYPE_000
+            RunAdapterStructuralPattern(); //LD_ADAPTER_000
+
 
             Console.ReadLine();
         }
@@ -132,6 +136,23 @@ namespace PatternsRefresh
             (manager.GetPrototype(1).Clone() as UserProfile).ShowInformation();  //new prototype copy
             endTime = DateTime.Now;
             Console.WriteLine("Second UserProfile object took " + endTime.Subtract(startTime).TotalSeconds + " seconds");
+        }
+
+        //LD_ADAPTER_000
+        public static void RunAdapterStructuralPattern()
+        {
+            List<IEmployee> list1 = new List<IEmployee>();
+            list1.Add(new Employee("Tom"));
+            list1.Add(new Employee("Jerry"));
+            list1.Add(new EmployeeAdapter("Bruno"));  //consultant from existing class
+            ShowHappiness(list1);
+
+            //*** Method to print execution results ***
+            void ShowHappiness(List<IEmployee> list2)
+            {
+                foreach (IEmployee i in list2)
+                    i.ShowHappiness();
+            }
         }
 
 
