@@ -5,6 +5,7 @@ using SingletonCreationalPattern;
 using System;
 using static FactoryDesignPattern.Program;
 using BuilderCreationalPattern;
+using PrototypeCreationalPattern;
 
 namespace PatternsRefresh
 {
@@ -16,7 +17,8 @@ namespace PatternsRefresh
             //RunSingletonDesignPattern(); //LD_SINGLETON_000
             //RunFactoryDesignPattern(); //LD_FACTORY_000
             //RunAbstractFactoryDesignPattern(); //LD_ABSTRACT_FACTORY_000
-            RunBuilderCreationalPattern(); //LD_BUILDER_000
+            //RunBuilderCreationalPattern(); //LD_BUILDER_000
+            //RunPrototypeCreationalPattern(); //LD_PROTOTYPE_000
 
             Console.ReadLine();
         }
@@ -101,7 +103,36 @@ namespace PatternsRefresh
             b.Show();
         }
 
-        
+        //LD_PROTOTYPE_000
+        public static void RunPrototypeCreationalPattern()
+        {
+            Configuration c = new Configuration();
+            DateTime startTime = DateTime.Now;
+            c.GetFileInformation();  //takes long time to create the first time
+            DateTime endTime = DateTime.Now;
+            Console.WriteLine("First Configuration object took " + endTime.Subtract(startTime).TotalSeconds + " seconds");
+
+            UserProfile p = new UserProfile();
+            startTime = DateTime.Now;
+            p.GetDatabaseInformation();  //takes long time to create the first time
+            endTime = DateTime.Now;
+            Console.WriteLine("First UserProfile object took " + endTime.Subtract(startTime).TotalSeconds + " seconds");
+
+            //add prototypes to the manager
+            PrototypeManager manager = new PrototypeManager();
+            manager.AddPrototype(c, 0);
+            manager.AddPrototype(p, 1);
+
+            startTime = DateTime.Now;
+            (manager.GetPrototype(0).Clone() as Configuration).ShowInformation();  //new prototype copy
+            endTime = DateTime.Now;
+            Console.WriteLine("Second Configuration object took " + endTime.Subtract(startTime).TotalSeconds + " seconds");
+
+            startTime = DateTime.Now;
+            (manager.GetPrototype(1).Clone() as UserProfile).ShowInformation();  //new prototype copy
+            endTime = DateTime.Now;
+            Console.WriteLine("Second UserProfile object took " + endTime.Subtract(startTime).TotalSeconds + " seconds");
+        }
 
 
 

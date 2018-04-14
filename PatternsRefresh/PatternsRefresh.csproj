@@ -10,6 +10,7 @@
     <ProjectReference Include="..\BuilderCreationalPattern\BuilderCreationalPattern.csproj" />
     <ProjectReference Include="..\FactoryDesignPattern\FactoryDesignPattern.csproj" />
     <ProjectReference Include="..\MediatorDesignPattern\MediatorDesignPattern.csproj" />
+    <ProjectReference Include="..\PrototypeCreationalPattern\PrototypeCreationalPattern.csproj" />
     <ProjectReference Include="..\SingletonDesignPattern\SingletonCreationalPattern.csproj" />
   </ItemGroup>
 
