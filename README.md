@@ -9,9 +9,6 @@ This project to refresh a set of probable working solutions for particular recur
 
 ## STRUCTURAL PATTERNS - Class and Object Composition
 
-### -> Structural - Adapter
-Match interfaces of different classes
-
 ### -> Structural - Bridge
 Separates an object’s interface from its implementation
 
