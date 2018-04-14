@@ -8,6 +8,7 @@ using BuilderCreationalPattern;
 using PrototypeCreationalPattern;
 using AdapterStructuralPattern;
 using System.Collections.Generic;
+using BridgeStructuralPattern;
 
 namespace PatternsRefresh
 {
@@ -21,8 +22,8 @@ namespace PatternsRefresh
             //RunAbstractFactoryDesignPattern(); //LD_ABSTRACT_FACTORY_000
             //RunBuilderCreationalPattern(); //LD_BUILDER_000
             //RunPrototypeCreationalPattern(); //LD_PROTOTYPE_000
-            RunAdapterStructuralPattern(); //LD_ADAPTER_000
-
+            //RunAdapterStructuralPattern(); //LD_ADAPTER_000
+            RunBridgeStructuralPattern(); //LD_BRIDGE_000
 
             Console.ReadLine();
         }
@@ -154,6 +155,27 @@ namespace PatternsRefresh
                     i.ShowHappiness();
             }
         }
+
+        //LD_BRIDGE_000
+        public static void RunBridgeStructuralPattern()
+        {
+                IAppliance tv = new TV("Bedroom TV");  //implementation object
+                IAppliance vaccum = new VaccumCleaner("My Vaccum Cleaner");  //implementation object
+
+                Switch s1 = GetSwitch(tv);  //convert to abstraction
+                Switch s2 = GetSwitch(vaccum);  //convert to abstraction
+
+                //*** client code works only with the abstraction objects, not the implementation objects ***
+                s1.TurnOn();
+                s2.TurnOn();
+
+            //convert implementation object to abstraction object
+            Switch GetSwitch(IAppliance a)
+            {
+                return new RemoteControl(a);
+            }
+        }
+
 
 
 
