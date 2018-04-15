@@ -5,6 +5,7 @@
 This design pattern allows to separate the abstraction from the implementation. In the bridge pattern there are 2 parts, the first part is the Abstraction, and the second part is the Implementation.  The bridge pattern allows the Abstraction and the Implementation to be developed independently, and the client code can access only the Abstraction part without being concerned about the Implementation part. 
 
 Example:
+
 **Abstraction:**
 inside a house there are appliances that you can turn on or off, such as the floor lamp, the TV, and the vacuum cleaner. There are different ways to turn the appliance on or off, such as using the on/off switch, the pull switch, or using a remote control. The concept of turning the appliance on or off is the Abstraction part in the bridge pattern, and the user only needs to know the Abstraction part.
 
@@ -18,7 +19,7 @@ Notice that the client code uses only the Abstraction part to perform the action
 
 22222222222
 
-MANCA DA METTERE I COMMENTI
+description to be updated
 
 2222222222
 
