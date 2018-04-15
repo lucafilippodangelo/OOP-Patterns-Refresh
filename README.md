@@ -1,5 +1,5 @@
 # Patterns Refresh (STILL IN PROGRESS)
-Real reason why I'm implementing this is to remember that patterns are not just for interviews!
+Real reason why I'm implementing this is to remember me and my gang of friends that patterns are not just for interviews, but we should have them in mind when design new functionalities!
 
 This project to refresh a set of probable working solutions for particular recurring problems.
 
@@ -8,26 +8,25 @@ This project to refresh a set of probable working solutions for particular recur
 - The description of the code implemented can be find under each pattern folder in readme file.
 
 ## CREATIONAL PATTERNS - Creation of Objects and Classes
---> done!
+--> all implemented!
 
-## STRUCTURAL PATTERNS - Class and Object Composition
---> in progress
------> Structural - Bridge, Separates an object’s interface from it's implementation
------> Structural - Composite, A tree structure of simple and composite objects
------> Structural - Decorator, Add responsibilities to objects dynamically
------> Structural - Facade, A single class that represents an entire subsystem
------> Structural - Flyweight, A fine-grained instance used for efficient sharing
------> Structural - Proxy, An object representing another object
+## STRUCTURAL PATTERNS(IN PROGRESS) - Class and Object Composition
+- Structural - Bridge, Separates an object’s interface from it's implementation
+- Structural - Composite, A tree structure of simple and composite objects
+- Structural - Decorator, Add responsibilities to objects dynamically
+- Structural - Facade, A single class that represents an entire subsystem
+- Structural - Flyweight, A fine-grained instance used for efficient sharing
+- Structural - Proxy, An object representing another object
 
-## BEHAVIORAL PATTERNS - Communication between class and objects
+## BEHAVIORAL PATTERNS(IN PROGRESS) - Communication between class and objects
 
------> Behavioral- Chain of Responsability, A way of passing a request between a chain of objects
------> Behavioral- Command, Encapsulate a command request as an object
------> Behavioral- Interpreter, A way to include language elements in a program
------> Behavioral- Iterator, Sequentially access the elements of a collection
------> Behavioral- Memento, Capture and restore an object's internal state
------> Behavioral- Observer, A way of notifying change to a number of classes
------> Behavioral- State, Alter an object's behavior when its state changes
------> Behavioral- Strategy, Encapsulates an algorithm inside a class
------> Behavioral- Template Method, Method	Defer the exact steps of an algorithm to a subclass
------> Behavioral- Visitor, Defines a new operation to a class without change
+- Behavioral- Chain of Responsability, A way of passing a request between a chain of objects
+- Behavioral- Command, Encapsulate a command request as an object
+- Behavioral- Interpreter, A way to include language elements in a program
+- Behavioral- Iterator, Sequentially access the elements of a collection
+- Behavioral- Memento, Capture and restore an object's internal state
+- Behavioral- Observer, A way of notifying change to a number of classes
+- Behavioral- State, Alter an object's behavior when its state changes
+- Behavioral- Strategy, Encapsulates an algorithm inside a class
+- Behavioral- Template Method, Method	Defer the exact steps of an algorithm to a subclass
+- Behavioral- Visitor, Defines a new operation to a class without change
