@@ -10,6 +10,7 @@ using AdapterStructuralPattern;
 using System.Collections.Generic;
 using BridgeStructuralPattern;
 using CompositeStructuralPattern;
+using DecoratorStructuralPattern;
 
 namespace PatternsRefresh
 {
@@ -27,7 +28,10 @@ namespace PatternsRefresh
             RunAdapterStructuralPattern(); //LD_ADAPTER_000
             RunBridgeStructuralPattern(); //LD_BRIDGE_000
             RunCompositeStructuralPattern(); //LD_COMPOSITE_000
+            RunDecoratorStructuralPattern(); //LD_DECORATOR_000
             */
+
+
 
             Console.ReadLine();
         }
@@ -210,6 +214,21 @@ namespace PatternsRefresh
                 (c as CompositeStructuralPattern.IEmployee).ShowHappiness();
             }
         }
+
+        //LD_DECORATOR_000
+        public static void RunDecoratorStructuralPattern()
+        {
+            IComponent a = new PlainIceCream(); //LD starting point
+            IComponent b = new CandyTopping(a); //LD pass in the IComponent that you want to decorate
+            IComponent c = new PeanutTopping(b); //LD add another decorator (the "input" -> "b" will be a ref to "Candy" and then to "PlainIceCream")
+            IComponent d = new NutsTopping(c); //LD add another decorator (the "input" -> "b" will be a ref to "Peanut" and then to "Candy" and then to "PlainIceCream") 
+            d.AddTopping(); //LD do all the operations of AddTopping() of PlainIceCream, Candy, Peanuts, Nuts Toppings in one call
+        }
+
+
+
+
+
 
 
     }//LD end Program
