@@ -8,15 +8,15 @@ This project to refresh a set of probable working solutions for particular recur
 - The description of the code implemented can be find under each pattern folder in readme file.
 
 ## CREATIONAL PATTERNS - Creation of Objects and Classes
-OK - Creational - **Abstract Factory**,	Creates an instance of several families of classes
-OK - Creational - **Builder**,	Separates object construction from its representation
-OK - Creational - **Factory**, Method	Creates an instance of several derived classes
-OK - Creational - **Prototype**, A fully initialized instance to be copied or cloned
-OK - Creational - **Singleton**, A class of which only a single instance can exist
+- OK Creational - **Abstract Factory**,	Creates an instance of several families of classes
+- OK Creational - **Builder**,	Separates object construction from its representation
+- OK Creational - **Factory**, Method	Creates an instance of several derived classes
+- OK Creational - **Prototype**, A fully initialized instance to be copied or cloned
+- OK Creational - **Singleton**, A class of which only a single instance can exist
 
 ## STRUCTURAL PATTERNS(IN PROGRESS) - Class and Object Composition
-OK - Structural - **Adapter**, Match interfaces of different classes
-OK - Structural - **Bridge**, Separates an object’s interface from it's implementation
+- OK Structural - **Adapter**, Match interfaces of different classes
+- OK Structural - **Bridge**, Separates an object’s interface from it's implementation
 - Structural - **Composite**, A tree structure of simple and composite objects
 - Structural - **Decorator**, Add responsibilities to objects dynamically
 - Structural - **Facade**, A single class that represents an entire subsystem
@@ -30,7 +30,7 @@ OK - Structural - **Bridge**, Separates an object’s interface from it's implemen
 - Behavioral- **Command**, Encapsulate a command request as an object
 - Behavioral- **Interpreter**, A way to include language elements in a program
 - Behavioral- **Iterator**, Sequentially access the elements of a collection
-OK - Behavioral - **Mediator**,	Defines simplified communication between classes
+- OK Behavioral - **Mediator**,	Defines simplified communication between classes
 - Behavioral- **Memento**, Capture and restore an object's internal state
 - Behavioral- **Observer**, A way of notifying change to a number of classes
 - Behavioral- **State**, Alter an object's behavior when its state changes
