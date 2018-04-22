@@ -37,7 +37,8 @@ This project to refresh a set of probable working solutions for particular recur
 - Behavioral- **Command**, Encapsulate a command request as an object
 - Behavioral- **Interpreter**, A way to include language elements in a program
 - Behavioral- **Iterator**, Sequentially access the elements of a collection
-- OK Behavioral - **Mediator**,	Defines simplified communication between classes
+- Behavioral - **Mediator**,	Defines simplified communication between classes
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/MediatorDesignPattern
 - Behavioral- **Memento**, Capture and restore an object's internal state
 - Behavioral- **Observer**, A way of notifying change to a number of classes
 - Behavioral- **State**, Alter an object's behavior when its state changes
