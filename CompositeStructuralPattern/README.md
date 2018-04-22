@@ -22,7 +22,5 @@ When you call a supervisor's ShowHappiness method, it will show both the supervi
 
 The key to the composite design pattern is that it allows you to set up a structure with a common operation (such as the ShowHappiness method), and then you can have all the elements to perform the common operation. This is done by keeping a list of child elements that implements the common interface in the composite class, and then calling each child element's operations.
 
-
-
 **Main Resources**
 - http://www.dotnetlead.com/design-patterns/composite

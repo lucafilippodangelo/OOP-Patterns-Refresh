@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Net.Compilers" Version="2.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AbstractFactoryDesignPattern\AbstractFactoryDesignPattern.csproj" />
     <ProjectReference Include="..\AdapterStructuralPattern\AdapterStructuralPattern.csproj" />
     <ProjectReference Include="..\BridgeStructuralPattern\BridgeStructuralPattern.csproj" />

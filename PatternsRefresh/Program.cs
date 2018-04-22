@@ -9,7 +9,7 @@ using PrototypeCreationalPattern;
 using AdapterStructuralPattern;
 using System.Collections.Generic;
 using BridgeStructuralPattern;
-using static CompositeStructuralPattern.IEmployeeConcreteImplementations;
+using CompositeStructuralPattern;
 
 namespace PatternsRefresh
 {
@@ -17,15 +17,17 @@ namespace PatternsRefresh
     {
         public static void Main(string[] args)
         {
-            //RunMediatorDesignPattern(); //LD_MEDIATOR_000
-            //RunSingletonDesignPattern(); //LD_SINGLETON_000
-            //RunFactoryDesignPattern(); //LD_FACTORY_000
-            //RunAbstractFactoryDesignPattern(); //LD_ABSTRACT_FACTORY_000
-            //RunBuilderCreationalPattern(); //LD_BUILDER_000
-            //RunPrototypeCreationalPattern(); //LD_PROTOTYPE_000
-            //RunAdapterStructuralPattern(); //LD_ADAPTER_000
-            //RunBridgeStructuralPattern(); //LD_BRIDGE_000
+            /*
+            RunMediatorDesignPattern(); //LD_MEDIATOR_000
+            RunSingletonCreationalPattern(); //LD_SINGLETON_000
+            RunFactoryDesignPattern(); //LD_FACTORY_000
+            RunAbstractFactoryDesignPattern(); //LD_ABSTRACT_FACTORY_000
+            RunBuilderCreationalPattern(); //LD_BUILDER_000
+            RunPrototypeCreationalPattern(); //LD_PROTOTYPE_000
+            RunAdapterStructuralPattern(); //LD_ADAPTER_000
+            RunBridgeStructuralPattern(); //LD_BRIDGE_000
             RunCompositeStructuralPattern(); //LD_COMPOSITE_000
+            */
 
             Console.ReadLine();
         }
@@ -144,18 +146,23 @@ namespace PatternsRefresh
         //LD_ADAPTER_000
         public static void RunAdapterStructuralPattern()
         {
-            List<IEmployee> list1 = new List<IEmployee>();
+            List<AdapterStructuralPattern.IEmployee> list1 = new List<AdapterStructuralPattern.IEmployee>();
             list1.Add(new Employee("Tom"));
             list1.Add(new Employee("Jerry"));
             list1.Add(new EmployeeAdapter("Bruno"));  //consultant from existing class
             ShowHappiness(list1);
 
             //*** Method to print execution results ***
-            void ShowHappiness(List<IEmployee> list2)
+            void ShowHappiness(List<AdapterStructuralPattern.IEmployee> list2)
             {
-                foreach (IEmployee i in list2)
+                foreach (AdapterStructuralPattern.IEmployee i in list2)
                     i.ShowHappiness();
             }
+        }
+
+        private static void ShowHappiness(List<AdapterStructuralPattern.IEmployee> list1)
+        {
+            throw new NotImplementedException();
         }
 
         //LD_BRIDGE_000
@@ -197,12 +204,11 @@ namespace PatternsRefresh
             c.AddSubordinate(d); //Bob works for Jerry
             d.AddSubordinate(e); //Jimmy works for Bob
 
-            //Jerry shows his happiness and asks everyone else to do the same
-            if (c is IEmployee)
+            //"Jerry" shows his happiness and asks "mary" and "bob" to do the same
+            if (c is CompositeStructuralPattern.IEmployee)
             {
-               (c as IEmployee).ShowHappiness();
+                (c as CompositeStructuralPattern.IEmployee).ShowHappiness();
             }
-                
         }
 
 
