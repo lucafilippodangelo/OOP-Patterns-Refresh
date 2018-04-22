@@ -1,4 +1,4 @@
-# Patterns Refresh (STILL IN PROGRESS)
+# Patterns Refresh
 Real reason why I'm implementing this is to remember me and my gang of friends that patterns are not just for interviews, but we should have them in mind when design new functionalities!
 
 This project to refresh a set of probable working solutions for particular recurring problems.
