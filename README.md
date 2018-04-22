@@ -22,7 +22,7 @@ This project to refresh a set of probable working solutions for particular recur
 ## STRUCTURAL PATTERNS(IN PROGRESS) - Class and Object Composition
 - Structural - **Adapter**, Match interfaces of different classes
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/AdapterStructuralPattern
-- OK Structural - **Bridge**, Separates an object’s interface from it's implementation
+- Structural - **Bridge**, Separates an object’s interface from it's implementation
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/BuilderCreationalPattern
 - Structural - **Composite**, A tree structure of simple and composite objects
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/CompositeStructuralPattern
