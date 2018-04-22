@@ -23,12 +23,15 @@ This project to refresh a set of probable working solutions for particular recur
 - Structural - **Adapter**, Match interfaces of different classes
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/AdapterStructuralPattern
 - Structural - **Bridge**, Separates an object’s interface from it's implementation
-  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/BuilderCreationalPattern
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/BridgeStructuralPattern
 - Structural - **Composite**, A tree structure of simple and composite objects
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/CompositeStructuralPattern
 - Structural - **Decorator**, Add responsibilities to objects dynamically
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/DecoratorStructuralPattern
 - Structural - **Facade**, A single class that represents an entire subsystem
+
 - Structural - **Flyweight**, A fine-grained instance used for efficient sharing
+
 - Structural - **Proxy**, An object representing another object
 
 
