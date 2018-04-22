@@ -25,6 +25,7 @@ This project to refresh a set of probable working solutions for particular recur
 - OK Structural - **Bridge**, Separates an object’s interface from it's implementation
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/BuilderCreationalPattern
 - Structural - **Composite**, A tree structure of simple and composite objects
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/CompositeStructuralPattern
 - Structural - **Decorator**, Add responsibilities to objects dynamically
 - Structural - **Facade**, A single class that represents an entire subsystem
 - Structural - **Flyweight**, A fine-grained instance used for efficient sharing

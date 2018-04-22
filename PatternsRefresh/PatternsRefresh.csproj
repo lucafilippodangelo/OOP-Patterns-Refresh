@@ -10,6 +10,7 @@
     <ProjectReference Include="..\AdapterStructuralPattern\AdapterStructuralPattern.csproj" />
     <ProjectReference Include="..\BridgeStructuralPattern\BridgeStructuralPattern.csproj" />
     <ProjectReference Include="..\BuilderCreationalPattern\BuilderCreationalPattern.csproj" />
+    <ProjectReference Include="..\CompositeStructuralPattern\CompositeStructuralPattern.csproj" />
     <ProjectReference Include="..\FactoryDesignPattern\FactoryDesignPattern.csproj" />
     <ProjectReference Include="..\MediatorDesignPattern\MediatorDesignPattern.csproj" />
     <ProjectReference Include="..\PrototypeCreationalPattern\PrototypeCreationalPattern.csproj" />

@@ -9,6 +9,7 @@ using PrototypeCreationalPattern;
 using AdapterStructuralPattern;
 using System.Collections.Generic;
 using BridgeStructuralPattern;
+using static CompositeStructuralPattern.IEmployeeConcreteImplementations;
 
 namespace PatternsRefresh
 {
@@ -23,7 +24,8 @@ namespace PatternsRefresh
             //RunBuilderCreationalPattern(); //LD_BUILDER_000
             //RunPrototypeCreationalPattern(); //LD_PROTOTYPE_000
             //RunAdapterStructuralPattern(); //LD_ADAPTER_000
-            RunBridgeStructuralPattern(); //LD_BRIDGE_000
+            //RunBridgeStructuralPattern(); //LD_BRIDGE_000
+            RunCompositeStructuralPattern(); //LD_COMPOSITE_000
 
             Console.ReadLine();
         }
@@ -180,7 +182,28 @@ namespace PatternsRefresh
             }
         }
 
+        //LD_COMPOSITE_000
+        public static void RunCompositeStructuralPattern()
+        {
+            Worker a = new Worker("Worker Tom", 5);
+            Supervisor b = new Supervisor("Supervisor Mary", 6);
+            Supervisor c = new Supervisor("Supervisor Jerry", 7);
+            Supervisor d = new Supervisor("Supervisor Bob", 9);
+            Worker e = new Worker("Worker Jimmy", 8);
 
+            //set up the relationships
+            b.AddSubordinate(a); //Tom works for Mary
+            c.AddSubordinate(b); //Mary works for Jerry
+            c.AddSubordinate(d); //Bob works for Jerry
+            d.AddSubordinate(e); //Jimmy works for Bob
+
+            //Jerry shows his happiness and asks everyone else to do the same
+            if (c is IEmployee)
+            {
+               (c as IEmployee).ShowHappiness();
+            }
+                
+        }
 
 
     }//LD end Program
