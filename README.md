@@ -8,15 +8,22 @@ This project to refresh a set of probable working solutions for particular recur
 - The description of the code implemented can be find under each pattern folder in readme file.
 
 ## CREATIONAL PATTERNS - Creation of Objects and Classes
-- OK Creational - **Abstract Factory**,	Creates an instance of several families of classes
-- OK Creational - **Builder**,	Separates object construction from its representation
-- OK Creational - **Factory**, Method	Creates an instance of several derived classes
-- OK Creational - **Prototype**, A fully initialized instance to be copied or cloned
-- OK Creational - **Singleton**, A class of which only a single instance can exist
+- Creational - **Abstract Factory**,	Creates an instance of several families of classes
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/AbstractFactoryDesignPattern
+- Creational - **Builder**,	Separates object construction from its representation
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/BuilderCreationalPattern
+- Creational - **Factory**, Method	Creates an instance of several derived classes
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/FactoryDesignPattern
+- Creational - **Prototype**, A fully initialized instance to be copied or cloned
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/PrototypeCreationalPattern
+- Creational - **Singleton**, A class of which only a single instance can exist
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/SingletonDesignPattern
 
 ## STRUCTURAL PATTERNS(IN PROGRESS) - Class and Object Composition
-- OK Structural - **Adapter**, Match interfaces of different classes
+- Structural - **Adapter**, Match interfaces of different classes
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/AdapterStructuralPattern
 - OK Structural - **Bridge**, Separates an object’s interface from it's implementation
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/BuilderCreationalPattern
 - Structural - **Composite**, A tree structure of simple and composite objects
 - Structural - **Decorator**, Add responsibilities to objects dynamically
 - Structural - **Facade**, A single class that represents an entire subsystem
