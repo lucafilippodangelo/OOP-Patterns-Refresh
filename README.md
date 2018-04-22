@@ -29,7 +29,7 @@ This project to refresh a set of probable working solutions for particular recur
 - Structural - **Decorator**, Add responsibilities to objects dynamically
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/DecoratorStructuralPattern
 - Structural - **Facade**, A single class that represents an entire subsystem
-  - TO DO https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/FacadeStructuralPattern
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/FacadeStructuralPattern
 - Structural - **Flyweight**, A fine-grained instance used for efficient sharing
   - TO DO https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/FlyweightStructuralPattern
 - Structural - **Proxy**, An object representing another object

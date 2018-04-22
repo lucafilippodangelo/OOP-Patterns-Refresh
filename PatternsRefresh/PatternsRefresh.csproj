@@ -16,6 +16,7 @@
     <ProjectReference Include="..\BuilderCreationalPattern\BuilderCreationalPattern.csproj" />
     <ProjectReference Include="..\CompositeStructuralPattern\CompositeStructuralPattern.csproj" />
     <ProjectReference Include="..\DecoratorStructuralPattern\DecoratorStructuralPattern.csproj" />
+    <ProjectReference Include="..\FacadeStructuralPattern\FacadeStructuralPattern.csproj" />
     <ProjectReference Include="..\FactoryDesignPattern\FactoryDesignPattern.csproj" />
     <ProjectReference Include="..\MediatorDesignPattern\MediatorDesignPattern.csproj" />
     <ProjectReference Include="..\PrototypeCreationalPattern\PrototypeCreationalPattern.csproj" />

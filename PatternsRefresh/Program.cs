@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using BridgeStructuralPattern;
 using CompositeStructuralPattern;
 using DecoratorStructuralPattern;
+using FacadeStructuralPattern;
 
 namespace PatternsRefresh
 {
@@ -29,9 +30,8 @@ namespace PatternsRefresh
             RunBridgeStructuralPattern(); //LD_BRIDGE_000
             RunCompositeStructuralPattern(); //LD_COMPOSITE_000
             RunDecoratorStructuralPattern(); //LD_DECORATOR_000
-            */
-
-
+            RunFacadeStructuralPattern(); //LD_FACADE_000
+*/
 
             Console.ReadLine();
         }
@@ -225,7 +225,13 @@ namespace PatternsRefresh
             d.AddTopping(); //LD do all the operations of AddTopping() of PlainIceCream, Candy, Peanuts, Nuts Toppings in one call
         }
 
-
+        //LD_FACADE_000
+        public static void RunFacadeStructuralPattern()
+        {
+            //LD  the client code only need to access the Facade class to gain the functionalities of the 3 class libraries
+            Facade f = new Facade();
+            f.DoSomething();
+        }
 
 
 
