@@ -4,6 +4,7 @@ using System.Text;
 
 namespace BridgeStructuralPattern
 {
+    //LDBRG002
     //concrete abstraction
     public class RemoteControl : Switch
     {

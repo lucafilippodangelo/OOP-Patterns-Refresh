@@ -172,7 +172,11 @@ namespace PatternsRefresh
             //convert implementation object to abstraction object
             Switch GetSwitch(IAppliance a)
             {
-                return new RemoteControl(a);
+                //LDBRG002
+                //LD the concrete implementation of the abstraction, our RC gets in input the 
+                // concrete appliance to manage. We could have many alternative to RC to manage applicances,
+                // in any case I have to add just a new class with same approach as "RemoteControl.cs"
+                return new RemoteControl(a); 
             }
         }
 

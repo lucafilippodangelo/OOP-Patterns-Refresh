@@ -4,6 +4,7 @@ using System.Text;
 
 namespace BridgeStructuralPattern
 {
+    //LDBRG001
     //the abstraction
     public abstract class Switch
     {
