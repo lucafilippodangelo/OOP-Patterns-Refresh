@@ -12,6 +12,7 @@ using BridgeStructuralPattern;
 using CompositeStructuralPattern;
 using DecoratorStructuralPattern;
 using FacadeStructuralPattern;
+using FlyweightStructuralPattern;
 
 namespace PatternsRefresh
 {
@@ -32,6 +33,11 @@ namespace PatternsRefresh
             RunDecoratorStructuralPattern(); //LD_DECORATOR_000
             RunFacadeStructuralPattern(); //LD_FACADE_000
 */
+            RunFlyweightStructuralPattern(); //LD_FLYWEIGHT_000
+
+
+
+
 
             Console.ReadLine();
         }
@@ -233,7 +239,29 @@ namespace PatternsRefresh
             f.DoSomething();
         }
 
+        //LD_FLYWEIGHT_000
+        public static void RunFlyweightStructuralPattern()
+        {
+            AlienFactory factory = new AlienFactory();
+            factory.SaveAlien(0, new LargeAlien());
+            factory.SaveAlien(1, new LittleAlien());
 
+            //now access the flyweight objects
+            IAlien a = factory.GetAlien(0);
+            IAlien b = factory.GetAlien(1);
+
+            //show intrinsic states, all accessed in memory without calculations
+            Console.WriteLine("Showing intrinsic states...");
+            Console.WriteLine("Alien of type 0 is " + a.Shape);
+            Console.WriteLine("Alien of type 1 is " + b.Shape);
+
+            //show extrinsic states, need calculations
+            Console.WriteLine("Showing extrinsic states...");
+            Console.WriteLine("Alien of type 0 is " + a.GetColor(0).ToString());
+            Console.WriteLine("Alien of type 0 is " + a.GetColor(1).ToString());
+            Console.WriteLine("Alien of type 1 is " + b.GetColor(0).ToString());
+            Console.WriteLine("Alien of type 1 is " + b.GetColor(1).ToString());
+        }
 
 
 

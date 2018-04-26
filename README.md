@@ -31,7 +31,7 @@ This project to refresh a set of probable working solutions for particular recur
 - Structural - **Facade**, A single class that represents an entire subsystem
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/FacadeStructuralPattern
 - Structural - **Flyweight**, A fine-grained instance used for efficient sharing
-  - TO DO https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/FlyweightStructuralPattern
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/FlyweightStructuralPattern
 - Structural - **Proxy**, An object representing another object
   - TO DO https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/ProxyStructuralPattern
 
