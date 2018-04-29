@@ -14,6 +14,7 @@ using DecoratorStructuralPattern;
 using FacadeStructuralPattern;
 using FlyweightStructuralPattern;
 using ProxyStructuralPattern;
+using ChainOfResponsabilityBehavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -34,10 +35,9 @@ namespace PatternsRefresh
             RunDecoratorStructuralPattern(); //LD_DECORATOR_000
             RunFacadeStructuralPattern(); //LD_FACADE_000
             RunFlyweightStructuralPattern(); //LD_FLYWEIGHT_000
-*/
             RunProxyStructuralPattern(); //LD_PROXY_000
-
-
+*/
+            RunChainOfResponsabilityBehavioralPattern(); //LD_COR_000
 
 
 
@@ -112,7 +112,7 @@ namespace PatternsRefresh
         //LD_BUILDER_000
         public static void RunBuilderCreationalPattern()
         {
-            Director d = new Director();
+            BuilderCreationalPattern.Director d = new BuilderCreationalPattern.Director();
 
             Console.WriteLine("Build a jet airplane");
             //LDB004
@@ -274,6 +274,43 @@ namespace PatternsRefresh
             car = new ProxyCar(new Driver(25));
             car.MoveCar();
         }
+
+        //LD_COR_000
+        public static void RunChainOfResponsabilityBehavioralPattern()
+        {
+            /*
+             Let's apply the pattern to an example. In a bank where the approval route for mortgage applications are 
+             from the bank manager to the director then to the vice president, where the approval limits are:
+               - Manager – 0 to 100k
+               - Director – 100k to 250k
+               - Vice President – anything above 250k
+             We will pass the request to the manager until the application is processed
+
+             Notice that the request is automatically processed by the correct person without the client code 
+             having to determine who will process the request
+             */
+
+            LoanApprover a = new Manager();
+            LoanApprover b = new ChainOfResponsabilityBehavioralPattern.Director();
+            LoanApprover c = new VicePresident();
+
+            //LD here I setup the hierarchy
+            a.SetNextApprover(b);
+            b.SetNextApprover(c);
+       
+            a.ApproveLoan(new Loan(50000));  //this will be approved by the manager
+            a.ApproveLoan(new Loan(200000));  //this will be approved by the director
+            a.ApproveLoan(new Loan(300000));  //this will be approved by the vice president
+        }
+
+
+
+
+
+
+
+
+
 
     }//LD end Program
 }//LD close namespace
