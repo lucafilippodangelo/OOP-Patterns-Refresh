@@ -19,7 +19,7 @@ This project to refresh a set of probable working solutions for particular recur
 - Creational - **Singleton**, A class of which only a single instance can exist
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/SingletonDesignPattern
 
-## STRUCTURAL PATTERNS(IN PROGRESS) - Class and Object Composition
+## STRUCTURAL PATTERNS - Class and Object Composition
 - Structural - **Adapter**, Match interfaces of different classes
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/AdapterStructuralPattern
 - Structural - **Bridge**, Separates an object’s interface from it's implementation
@@ -35,7 +35,7 @@ This project to refresh a set of probable working solutions for particular recur
 - Structural - **Proxy**, An object representing another object
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/ProxyStructuralPattern
 
-## BEHAVIORAL PATTERNS(IN PROGRESS) - Communication between class and objects
+## BEHAVIORAL PATTERNS - Communication between class and objects
 
 - Behavioral- **Chain of Responsability**, A way of passing a request between a chain of objects
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/ChainOfResponsabilityBehavioralPattern

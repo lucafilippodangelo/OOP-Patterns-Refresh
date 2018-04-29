@@ -15,6 +15,7 @@
     <ProjectReference Include="..\BridgeStructuralPattern\BridgeStructuralPattern.csproj" />
     <ProjectReference Include="..\BuilderCreationalPattern\BuilderCreationalPattern.csproj" />
     <ProjectReference Include="..\ChainOfResponsabilityBehavioralPattern\ChainOfResponsabilityBehavioralPattern.csproj" />
+    <ProjectReference Include="..\CommandBehavioralPattern\CommandBehavioralPattern.csproj" />
     <ProjectReference Include="..\CompositeStructuralPattern\CompositeStructuralPattern.csproj" />
     <ProjectReference Include="..\DecoratorStructuralPattern\DecoratorStructuralPattern.csproj" />
     <ProjectReference Include="..\FacadeStructuralPattern\FacadeStructuralPattern.csproj" />

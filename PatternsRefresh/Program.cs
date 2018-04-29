@@ -15,6 +15,7 @@ using FacadeStructuralPattern;
 using FlyweightStructuralPattern;
 using ProxyStructuralPattern;
 using ChainOfResponsabilityBehavioralPattern;
+using CommandBehavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -305,8 +306,21 @@ namespace PatternsRefresh
         }
 
         //LD_COMMAND_000
-        public static void RunCommandBehavioralPattern() {
+        public static void RunCommandBehavioralPattern()
+        {
+            //LDCOM005
+            Invoker i = new Invoker();
 
+            //save undo to position 100
+            ICommand a = new UndoCommand(100);
+            i.AddCommand(a);
+
+            //save undo to position 200
+            ICommand b = new UndoCommand(200);
+            i.AddCommand(b);
+
+            //perform the undo
+            i.RunCommand();   //the client does not need to know about the details of the undo
         } 
 
 
