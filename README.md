@@ -33,7 +33,7 @@ This project to refresh a set of probable working solutions for particular recur
 - Structural - **Flyweight**, A fine-grained instance used for efficient sharing
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/FlyweightStructuralPattern
 - Structural - **Proxy**, An object representing another object
-  - TO DO https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/ProxyStructuralPattern
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/ProxyStructuralPattern
 
 ## BEHAVIORAL PATTERNS(IN PROGRESS) - Communication between class and objects
 
