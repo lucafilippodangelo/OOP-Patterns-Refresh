@@ -36,8 +36,9 @@ namespace PatternsRefresh
             RunFacadeStructuralPattern(); //LD_FACADE_000
             RunFlyweightStructuralPattern(); //LD_FLYWEIGHT_000
             RunProxyStructuralPattern(); //LD_PROXY_000
-*/
             RunChainOfResponsabilityBehavioralPattern(); //LD_COR_000
+*/
+            RunCommandBehavioralPattern(); //LD_COMMAND_000
 
 
 
@@ -303,7 +304,10 @@ namespace PatternsRefresh
             a.ApproveLoan(new Loan(300000));  //this will be approved by the vice president
         }
 
+        //LD_COMMAND_000
+        public static void RunCommandBehavioralPattern() {
 
+        } 
 
 
 

@@ -12,12 +12,9 @@ this pattern allows to pass a request to from an object to the next until the re
   - //LDCOR004 The **ProcessRequest** method is the method signature that all child classes must implement.
 - //LDCOR005 The **ConcreteHandler** are the concrete child classes that handles the requests. In its ProcessRequest method it checks to see if it can process the request, if yes it will process the request and return, if not the request will be passed to the next handler. This logic is repeated until the request is fulfilled.
 
-**Example**
-
-
 
 ### Main Resource
-http://www.dotnetlead.com/design-patterns/proxy
+http://www.dotnetlead.com/design-patterns/chain-of-responsibility
 
 
 
