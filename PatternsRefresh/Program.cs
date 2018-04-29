@@ -1,5 +1,4 @@
-﻿using FactoryDesignPattern;
-using AbstractFactoryDesignPattern;
+﻿using AbstractFactoryDesignPattern;
 using MediatorDesignPattern;
 using SingletonCreationalPattern;
 using System;
@@ -16,6 +15,7 @@ using FlyweightStructuralPattern;
 using ProxyStructuralPattern;
 using ChainOfResponsabilityBehavioralPattern;
 using CommandBehavioralPattern;
+using InterpreterBehavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -38,8 +38,9 @@ namespace PatternsRefresh
             RunFlyweightStructuralPattern(); //LD_FLYWEIGHT_000
             RunProxyStructuralPattern(); //LD_PROXY_000
             RunChainOfResponsabilityBehavioralPattern(); //LD_COR_000
-*/
             RunCommandBehavioralPattern(); //LD_COMMAND_000
+*/
+            RunInterpreterBehavioralPattern(); //LD_INTERPRETER_000
 
 
 
@@ -321,8 +322,30 @@ namespace PatternsRefresh
 
             //perform the undo
             i.RunCommand();   //the client does not need to know about the details of the undo
-        } 
+        }
 
+        //LD_INTERPRETER_000
+        public static void RunInterpreterBehavioralPattern()
+        {
+            //LDINT001
+            string tokenString = "+ - 10 2 3";
+
+            /*tree representation
+                 +
+              -     3
+            10 2
+            */
+            List<string> tokenList = new List<string>(tokenString.Split(' '));
+
+            IExpression expression = new TokenReader().ReadToken(tokenList);
+            Console.WriteLine(expression.Interpret());    // (10 - 2) + 3 = 11
+
+            tokenString = "- + 10 5 - 8 2";
+            tokenList = new List<string>(tokenString.Split(' '));
+
+            expression = new TokenReader().ReadToken(tokenList);
+            Console.WriteLine(expression.Interpret());   // (10 + 5) - (8 - 2) = 9 
+        }
 
 
 
