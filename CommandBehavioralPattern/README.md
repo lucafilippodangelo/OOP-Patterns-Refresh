@@ -3,12 +3,14 @@
 ### Encapsulate a command request as an object
 
 **When to use it**
+
 this pattern allows to store a list of actions that you can execute later. 
 A common example is storing the **undo actions** in an application. The undo actions are stored as the user is making changes in an application. When the user decides to perform the undo, the undo actions are retrieved and executed.
 
 The **benefit** of the command pattern is that it hides the details of the actions that needs to be performed, so that the client code does not need to be concerned about the details when it needs to execute the actions. The client code just need to tell the application to execute the command that was stored.  
 
 **Key Points**
+
 The **client code** (calling code) will used the **Invoker** to run the commands, where the **Command** objects will call the **Receiver** to perform the action. 
 
 The benefit is that the client code does not need to know what is stored in the Command objects nor the actions that will be performed by the Receiver, and this is the key of the Command Design Pattern.
