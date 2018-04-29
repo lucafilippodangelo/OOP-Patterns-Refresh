@@ -3,6 +3,7 @@
 ### An object representing another object
 
 **Description**
+
 this pattern allows to provide an interface to other objects by creating a wrapper class as the proxy. The wrapper class, which is the proxy, can add additional functionality to the object of interest without changing the object's code.    
 
 **When to use it**
@@ -13,6 +14,7 @@ this pattern allows to provide an interface to other objects by creating a wrapp
 - Adding a thread-safe feature to an existing class without changing the existing class's code.
 
 **To recap**
+
 the proxy is the object that is being called by the client to access the real object behind the scene.   
 
 ### Main Resource
