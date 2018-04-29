@@ -40,6 +40,7 @@ This project to refresh a set of probable working solutions for particular recur
 - Behavioral- **Chain of Responsability**, A way of passing a request between a chain of objects
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/ChainOfResponsabilityBehavioralPattern
 - Behavioral- **Command**, Encapsulate a command request as an object
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/CommandBehavioralPattern
 - Behavioral- **Interpreter**, A way to include language elements in a program
 - Behavioral- **Iterator**, Sequentially access the elements of a collection
 - Behavioral - **Mediator**,	Defines simplified communication between classes
