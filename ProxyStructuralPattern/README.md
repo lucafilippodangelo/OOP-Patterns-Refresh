@@ -17,6 +17,25 @@ this pattern allows to provide an interface to other objects by creating a wrapp
 
 the proxy is the object that is being called by the client to access the real object behind the scene.   
 
+**Key Points**
+- //LDPROXY001 The **ISubject** interface is the interface that both the **Proxy** class and the **RealSubject** class implements.
+  - //LDPROXY002 It has the Operation method.
+- //LDPROXY003 The **Proxy** class is the proxy for the **RealSubject** class.
+  - //LDPROXY004 It has the **realSubject** variable that points to the real object behind the scene.
+  - //LDPROXY005 It has the **Operation** method that encapsulate the real object's Operation method. This is the place where you can add additional logic to the real object's methods.
+- //LDPROXY006 The **RealSubject** class is the real object behind the scene.
+  - It has the **Operation** method that performs the actual work.
+
+**Example**
+- //LDPROXY001 The **ICar** interface is the interface that both the ProxyCar class and the Car interface implements.
+  - //LDPROXY002 It has the MoveCar method.
+- //LDPROXY003  The **ProxyCar** class is the proxy for the Car class.
+  - //LDPROXY004 It has the **realCar** variable that points to the real object behind the scene.
+  - //LDPROXY005  It has the **MoveCar** method that encapsulate the real object's MoveCar method. This is the place where we put in the additional logic to determine if the driver is over 16 years old. If the driver is not over 16 years old it will not call the real object's MoveCar method.
+- //LDPROXY006 The **Car** class is the real object behind the scene.
+
+
+
 ### Main Resource
 http://www.dotnetlead.com/design-patterns/proxy
 

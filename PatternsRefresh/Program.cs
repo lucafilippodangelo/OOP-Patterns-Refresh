@@ -13,6 +13,7 @@ using CompositeStructuralPattern;
 using DecoratorStructuralPattern;
 using FacadeStructuralPattern;
 using FlyweightStructuralPattern;
+using ProxyStructuralPattern;
 
 namespace PatternsRefresh
 {
@@ -32,8 +33,9 @@ namespace PatternsRefresh
             RunCompositeStructuralPattern(); //LD_COMPOSITE_000
             RunDecoratorStructuralPattern(); //LD_DECORATOR_000
             RunFacadeStructuralPattern(); //LD_FACADE_000
-*/
             RunFlyweightStructuralPattern(); //LD_FLYWEIGHT_000
+*/
+            RunProxyStructuralPattern(); //LD_PROXY_000
 
 
 
@@ -263,7 +265,15 @@ namespace PatternsRefresh
             Console.WriteLine("Alien of type 1 is " + b.GetColor(1).ToString());
         }
 
+        //LD_PROXY_000
+        public static void RunProxyStructuralPattern()
+        {
+            ICar car = new ProxyCar(new Driver(16));
+            car.MoveCar();
 
+            car = new ProxyCar(new Driver(25));
+            car.MoveCar();
+        }
 
     }//LD end Program
 }//LD close namespace
