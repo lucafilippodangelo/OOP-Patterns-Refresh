@@ -13,9 +13,9 @@ We evaluate the input expressions by reading a tree from the left:
 - Example 1:
   - Expression = (10 - 2) + 3 = (SubtractExpression) + NumberExpression = Expression + Expression = AddExpression = 11
   - tree representation
-      +
-    -   3
-  10 2
+  -         +
+  -       -   3
+  -     10 2
 
 - Example 2:
   - Expression = (10 + 5) - (8 - 2) = (AddExpression) - (SubtractExpression) = Expression - Expression = SubtractExpression = 9
