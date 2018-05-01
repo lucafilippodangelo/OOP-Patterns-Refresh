@@ -22,6 +22,7 @@
     <ProjectReference Include="..\FactoryDesignPattern\FactoryDesignPattern.csproj" />
     <ProjectReference Include="..\FlyweightStructuralPattern\FlyweightStructuralPattern.csproj" />
     <ProjectReference Include="..\InterpreterBehavioralPattern\InterpreterBehavioralPattern.csproj" />
+    <ProjectReference Include="..\IteratorBahavioralPattern\IteratorBahavioralPattern.csproj" />
     <ProjectReference Include="..\MediatorDesignPattern\MediatorDesignPattern.csproj" />
     <ProjectReference Include="..\PrototypeCreationalPattern\PrototypeCreationalPattern.csproj" />
     <ProjectReference Include="..\ProxyStructuralPattern\ProxyStructuralPattern.csproj" />

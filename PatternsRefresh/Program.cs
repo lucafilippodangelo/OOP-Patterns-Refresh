@@ -16,6 +16,7 @@ using ProxyStructuralPattern;
 using ChainOfResponsabilityBehavioralPattern;
 using CommandBehavioralPattern;
 using InterpreterBehavioralPattern;
+using IteratorBahavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -351,7 +352,17 @@ namespace PatternsRefresh
         //LD_ITERATOR_000
         public static void RunIteratorBehavioralPattern()
         {
-            
+            //LDITE001
+            IAggregate<string> aggregate = new ConcreteAggregate<string>();
+
+            aggregate.AddItem("Apple");    //add sample data
+            aggregate.AddItem("Orange");
+            aggregate.AddItem("Banana");
+            aggregate.AddItem("Plum");
+
+            //iterate through the collection using IAggregate only
+            foreach (string i in aggregate.GetAll())
+                Console.WriteLine(i);
         }
 
 
