@@ -39,8 +39,9 @@ namespace PatternsRefresh
             RunProxyStructuralPattern(); //LD_PROXY_000
             RunChainOfResponsabilityBehavioralPattern(); //LD_COR_000
             RunCommandBehavioralPattern(); //LD_COMMAND_000
-*/
             RunInterpreterBehavioralPattern(); //LD_INTERPRETER_000
+*/
+            RunIteratorBehavioralPattern(); //LD_ITERATOR_000
 
 
 
@@ -347,8 +348,11 @@ namespace PatternsRefresh
             Console.WriteLine(expression.Interpret());   // (10 + 5) - (8 - 2) = 9 
         }
 
-
-
+        //LD_ITERATOR_000
+        public static void RunIteratorBehavioralPattern()
+        {
+            
+        }
 
 
 
