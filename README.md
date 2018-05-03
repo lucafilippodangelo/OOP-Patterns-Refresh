@@ -48,7 +48,7 @@ This project to refresh a set of probable working solutions for particular recur
 - Behavioral - **Mediator**,	Defines simplified communication between classes
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/MediatorDesignPattern
 - Behavioral- **Memento**, Capture and restore an object's internal state
-  - 
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/MementoBehavioralPattern
 - Behavioral- **Observer**, A way of notifying change to a number of classes
 - Behavioral- **State**, Alter an object's behavior when its state changes
 - Behavioral- **Strategy**, Encapsulates an algorithm inside a class

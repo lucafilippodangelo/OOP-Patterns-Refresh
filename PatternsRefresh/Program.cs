@@ -17,6 +17,7 @@ using ChainOfResponsabilityBehavioralPattern;
 using CommandBehavioralPattern;
 using InterpreterBehavioralPattern;
 using IteratorBahavioralPattern;
+using MementoBehavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -41,8 +42,9 @@ namespace PatternsRefresh
             RunChainOfResponsabilityBehavioralPattern(); //LD_COR_000
             RunCommandBehavioralPattern(); //LD_COMMAND_000
             RunInterpreterBehavioralPattern(); //LD_INTERPRETER_000
-*/
             RunIteratorBehavioralPattern(); //LD_ITERATOR_000
+*/
+            RunMementoBehavioralPattern(); //LD_MEMENTO_000
 
 
 
@@ -365,7 +367,27 @@ namespace PatternsRefresh
                 Console.WriteLine(i);
         }
 
+        //LD_MEMENTO_000
+        public static void RunMementoBehavioralPattern()
+        {
+            Originator<string> orig = new Originator<string>();
 
+            orig.SetState("state0");
+            Caretaker<string>.SaveState(orig); //save state of the originator
+            orig.ShowState();
+
+            orig.SetState("state1");
+            Caretaker<string>.SaveState(orig); //save state of the originator
+            orig.ShowState();
+
+            orig.SetState("state2");
+            Caretaker<string>.SaveState(orig); //save state of the originator
+            orig.ShowState();
+
+            //restore state of the originator
+            Caretaker<string>.RestoreState(orig, 0);
+            orig.ShowState();  //shows state0
+        }
 
 
     }//LD end Program
