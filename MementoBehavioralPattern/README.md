@@ -17,7 +17,6 @@ An example is: undo operations in a word processing application.
 
 **Note: ** the key to the Memento Design Pattern is that the client code will never access the Memento object, all of the interactions are done through the Caretaker class. The client code does not need to be concerned about how the states are stored and retrieved.
 
-
 ### Main Resource
 http://www.dotnetlead.com/design-patterns/memento
 
