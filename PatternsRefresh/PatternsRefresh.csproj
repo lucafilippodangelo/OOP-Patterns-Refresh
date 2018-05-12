@@ -25,7 +25,6 @@
     <ProjectReference Include="..\IteratorBahavioralPattern\IteratorBahavioralPattern.csproj" />
     <ProjectReference Include="..\MediatorDesignPattern\MediatorDesignPattern.csproj" />
     <ProjectReference Include="..\MementoBehavioralPattern\MementoBehavioralPattern.csproj" />
-    <ProjectReference Include="..\ObserverCreationalPattern\ObserverBehavioralPattern.csproj" />
     <ProjectReference Include="..\PrototypeCreationalPattern\PrototypeCreationalPattern.csproj" />
     <ProjectReference Include="..\ProxyStructuralPattern\ProxyStructuralPattern.csproj" />
     <ProjectReference Include="..\SingletonDesignPattern\SingletonCreationalPattern.csproj" />
