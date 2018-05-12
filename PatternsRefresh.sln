@@ -23,23 +23,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeStructuralPattern", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeStructuralPattern", "CompositeStructuralPattern\CompositeStructuralPattern.csproj", "{0A9A4369-4517-4C9A-8605-3D7672E04448}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorStructuralPattern", "DecoratorStructuralPattern\DecoratorStructuralPattern.csproj", "{82F4C6FB-C090-4078-98D5-A41798844167}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorStructuralPattern", "DecoratorStructuralPattern\DecoratorStructuralPattern.csproj", "{82F4C6FB-C090-4078-98D5-A41798844167}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadeStructuralPattern", "FacadeStructuralPattern\FacadeStructuralPattern.csproj", "{AA367181-9C2E-4E95-A6B9-4FD3AF6B372F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadeStructuralPattern", "FacadeStructuralPattern\FacadeStructuralPattern.csproj", "{AA367181-9C2E-4E95-A6B9-4FD3AF6B372F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightStructuralPattern", "FlyweightStructuralPattern\FlyweightStructuralPattern.csproj", "{75D99577-6415-454F-A40B-EEBE6DB4E567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlyweightStructuralPattern", "FlyweightStructuralPattern\FlyweightStructuralPattern.csproj", "{75D99577-6415-454F-A40B-EEBE6DB4E567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyStructuralPattern", "ProxyStructuralPattern\ProxyStructuralPattern.csproj", "{28BFD4B9-970D-4C7C-AB49-DFA27939521C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyStructuralPattern", "ProxyStructuralPattern\ProxyStructuralPattern.csproj", "{28BFD4B9-970D-4C7C-AB49-DFA27939521C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsabilityBehavioralPattern", "ChainOfResponsabilityBehavioralPattern\ChainOfResponsabilityBehavioralPattern.csproj", "{80A97C6C-D381-438A-9567-5EB569A285F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsabilityBehavioralPattern", "ChainOfResponsabilityBehavioralPattern\ChainOfResponsabilityBehavioralPattern.csproj", "{80A97C6C-D381-438A-9567-5EB569A285F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandBehavioralPattern", "CommandBehavioralPattern\CommandBehavioralPattern.csproj", "{17CD2C2F-778D-4FD1-9C0A-DBD23F629E1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandBehavioralPattern", "CommandBehavioralPattern\CommandBehavioralPattern.csproj", "{17CD2C2F-778D-4FD1-9C0A-DBD23F629E1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterpreterBehavioralPattern", "InterpreterBehavioralPattern\InterpreterBehavioralPattern.csproj", "{14B915EE-0734-44B9-BD75-5ABAC046434B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterpreterBehavioralPattern", "InterpreterBehavioralPattern\InterpreterBehavioralPattern.csproj", "{14B915EE-0734-44B9-BD75-5ABAC046434B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorBahavioralPattern", "IteratorBahavioralPattern\IteratorBahavioralPattern.csproj", "{1EE4601E-43C2-4A38-8556-CD2802E54B45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorBahavioralPattern", "IteratorBahavioralPattern\IteratorBahavioralPattern.csproj", "{1EE4601E-43C2-4A38-8556-CD2802E54B45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoBehavioralPattern", "MementoBehavioralPattern\MementoBehavioralPattern.csproj", "{66D9FA0D-4AF2-4CC1-8449-FA5ECE29CC2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoBehavioralPattern", "MementoBehavioralPattern\MementoBehavioralPattern.csproj", "{66D9FA0D-4AF2-4CC1-8449-FA5ECE29CC2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverBehavioralPattern", "ObserverCreationalPattern\ObserverBehavioralPattern.csproj", "{10E03668-CC6D-4FDA-855A-E58B4CA7583C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{66D9FA0D-4AF2-4CC1-8449-FA5ECE29CC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D9FA0D-4AF2-4CC1-8449-FA5ECE29CC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D9FA0D-4AF2-4CC1-8449-FA5ECE29CC2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E03668-CC6D-4FDA-855A-E58B4CA7583C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E03668-CC6D-4FDA-855A-E58B4CA7583C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E03668-CC6D-4FDA-855A-E58B4CA7583C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E03668-CC6D-4FDA-855A-E58B4CA7583C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

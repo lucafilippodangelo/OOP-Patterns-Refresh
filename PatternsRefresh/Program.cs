@@ -18,6 +18,7 @@ using CommandBehavioralPattern;
 using InterpreterBehavioralPattern;
 using IteratorBahavioralPattern;
 using MementoBehavioralPattern;
+using ObserverBehavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -43,9 +44,9 @@ namespace PatternsRefresh
             RunCommandBehavioralPattern(); //LD_COMMAND_000
             RunInterpreterBehavioralPattern(); //LD_INTERPRETER_000
             RunIteratorBehavioralPattern(); //LD_ITERATOR_000
-*/
             RunMementoBehavioralPattern(); //LD_MEMENTO_000
-
+*/
+            RunObserverBehavioralPattern(); //LD_OBSERVER_000
 
 
             Console.ReadLine();
@@ -389,7 +390,21 @@ namespace PatternsRefresh
             orig.ShowState();  //shows state0
         }
 
+        //LD_OBSERVER_000
+        public static void RunObserverBehavioralPattern()
+        {
+            //one subject and two observers
+            ISubject<string> subject = new ConcreteSubject<string>();
+            ObserverBehavioralPattern.IObserver<string> observer1 = new ConcreteObserver<string>("observer1");
+            ObserverBehavioralPattern.IObserver<string> observer2 = new ConcreteObserver<string>("observer2");
 
+            //register the observers to the subject
+            subject.Attach(observer1);
+            subject.Attach(observer2);
+
+            //a change to the subject automatically notifies all the observers
+            subject.SetState("stateX");
+        }
 
     }//LD end Program
 }//LD close namespace
