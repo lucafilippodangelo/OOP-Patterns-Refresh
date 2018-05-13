@@ -29,6 +29,7 @@
     <ProjectReference Include="..\PrototypeCreationalPattern\PrototypeCreationalPattern.csproj" />
     <ProjectReference Include="..\ProxyStructuralPattern\ProxyStructuralPattern.csproj" />
     <ProjectReference Include="..\SingletonDesignPattern\SingletonCreationalPattern.csproj" />
+    <ProjectReference Include="..\StateBehavioralPattern\StateBehavioralPattern.csproj" />
   </ItemGroup>
 
 </Project>

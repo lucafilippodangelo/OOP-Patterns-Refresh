@@ -19,6 +19,7 @@ using InterpreterBehavioralPattern;
 using IteratorBahavioralPattern;
 using MementoBehavioralPattern;
 using ObserverBehavioralPattern;
+using StateBehavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -45,8 +46,9 @@ namespace PatternsRefresh
             RunInterpreterBehavioralPattern(); //LD_INTERPRETER_000
             RunIteratorBehavioralPattern(); //LD_ITERATOR_000
             RunMementoBehavioralPattern(); //LD_MEMENTO_000
-*/
             RunObserverBehavioralPattern(); //LD_OBSERVER_000
+*/
+            RunStateBehavioralPattern(); //LD_STATE_000
 
 
             Console.ReadLine();
@@ -405,6 +407,22 @@ namespace PatternsRefresh
             //a change to the subject automatically notifies all the observers
             subject.SetState("stateX");
         }
+
+        //LD_STATE_000
+        public static void RunStateBehavioralPattern()
+        {
+            Warrior w = new Warrior();
+            w.ShowHealth();
+            w.Battle();
+            w.ShowHealth();
+            w.Battle();
+            w.ShowHealth();
+            w.Battle();
+            w.ShowHealth();
+            w.Battle();
+            w.ShowHealth();
+        }
+
 
     }//LD end Program
 }//LD close namespace
