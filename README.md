@@ -58,4 +58,4 @@ This project to refresh a set of probable working solutions for particular recur
 - Behavioral- **Template Method**, Method	Defer the exact steps of an algorithm to a subclass
   - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/TemplateMethodBehavioralPattern
 - Behavioral- **Visitor**, Defines a new operation to a class without change
-  -
+  - https://github.com/lucafilippodangelo/OOP-Patterns-Refresh/tree/master/VisitorBehavioralPattern
