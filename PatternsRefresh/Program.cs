@@ -47,8 +47,9 @@ namespace PatternsRefresh
             RunIteratorBehavioralPattern(); //LD_ITERATOR_000
             RunMementoBehavioralPattern(); //LD_MEMENTO_000
             RunObserverBehavioralPattern(); //LD_OBSERVER_000
-*/
             RunStateBehavioralPattern(); //LD_STATE_000
+*/
+            RunStrategyBehavioralPattern(); //LD_STRATEGY_000
 
 
             Console.ReadLine();
@@ -421,6 +422,12 @@ namespace PatternsRefresh
             w.ShowHealth();
             w.Battle();
             w.ShowHealth();
+        }
+
+        //LD_STRATEGY_000
+        public static void RunStrategyBehavioralPattern()
+        {
+
         }
 
 

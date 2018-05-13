@@ -16,6 +16,7 @@ Each behavior is represented by a state class, and the behavior can change from 
   - It has the **Request** method that calls the IState's methods.
 
 **KEY CONCEPT and comparison with Strategy pattern: ** 
+
 A comparison between the UML of the state pattern and the strategy pattern shows striking similarities. 
 
 Both pattern defines the behaviors as the concrete classes, and both pattern defines the context in which the behavior runs under. But there are clear differences. **The state pattern uses the behavior to switch to other behaviors**, while the strategy pattern lets the client code choose the behavior it needs.
