@@ -51,8 +51,9 @@ namespace PatternsRefresh
             RunObserverBehavioralPattern(); //LD_OBSERVER_000
             RunStateBehavioralPattern(); //LD_STATE_000
             RunStrategyBehavioralPattern(); //LD_STRATEGY_000
-*/
             RunTemplateMethodBehavioralPattern(); //LD_TEMPLATEMETHOD_000
+*/
+            RunVisitorBehavioralPattern(); //LD_VISITOR_000
 
 
             Console.ReadLine();
@@ -452,6 +453,9 @@ namespace PatternsRefresh
             c.BuildCar();
         }
 
+        //LD_VISITOR_000
+        public static void RunVisitorBehavioralPattern()
+        { } 
 
     }//LD end Program
 }//LD close namespace
