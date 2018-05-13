@@ -22,6 +22,7 @@ using ObserverBehavioralPattern;
 using StateBehavioralPattern;
 using StrategyBehavioralPattern;
 using TemplateMethodBehavioralPattern;
+using VisitorBehavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -455,7 +456,24 @@ namespace PatternsRefresh
 
         //LD_VISITOR_000
         public static void RunVisitorBehavioralPattern()
-        { } 
+        {
+            //first set up the structure
+            List<IElement> list = new List<IElement>();
+            list.Add(new Household("The Adams Family"));
+            list.Add(new Household("The Jones Family"));
+            list.Add(new BusinessEntity("The Oatmeal Bakery"));
+            list.Add(new BusinessEntity("The Ice Cream Shop"));
+
+            //use one visitor, or logic
+            IVisitor visitor = new SantaClaus();
+            foreach (IElement i in list)
+                i.Accept(visitor);   //apply the logic to the element
+
+            //use another visitor, or logic
+            visitor = new MailCarrier();
+            foreach (IElement i in list)
+                i.Accept(visitor);  //apply the logic to the element
+        } 
 
     }//LD end Program
 }//LD close namespace
