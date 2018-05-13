@@ -20,6 +20,7 @@ using IteratorBahavioralPattern;
 using MementoBehavioralPattern;
 using ObserverBehavioralPattern;
 using StateBehavioralPattern;
+using StrategyBehavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -427,7 +428,16 @@ namespace PatternsRefresh
         //LD_STRATEGY_000
         public static void RunStrategyBehavioralPattern()
         {
+            ChessGame game = new ChessGame();
 
+            game.ComputerPlayer = new EasyComputerPlayer();
+            game.Move();   //move using Easy difficulty
+
+            game.ComputerPlayer = new MediumComputerPlayer();
+            game.Move();   //move using Medium difficulty
+
+            game.ComputerPlayer = new AdvancedComputerPlayer();
+            game.Move();   //move using Advanced difficulty
         }
 
 

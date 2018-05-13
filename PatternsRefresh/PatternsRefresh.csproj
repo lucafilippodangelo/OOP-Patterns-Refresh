@@ -30,6 +30,7 @@
     <ProjectReference Include="..\ProxyStructuralPattern\ProxyStructuralPattern.csproj" />
     <ProjectReference Include="..\SingletonDesignPattern\SingletonCreationalPattern.csproj" />
     <ProjectReference Include="..\StateBehavioralPattern\StateBehavioralPattern.csproj" />
+    <ProjectReference Include="..\StrategyBehavioralPattern\StrategyBehavioralPattern.csproj" />
   </ItemGroup>
 
 </Project>
