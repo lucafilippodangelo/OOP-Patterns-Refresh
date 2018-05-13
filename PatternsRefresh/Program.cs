@@ -21,6 +21,7 @@ using MementoBehavioralPattern;
 using ObserverBehavioralPattern;
 using StateBehavioralPattern;
 using StrategyBehavioralPattern;
+using TemplateMethodBehavioralPattern;
 
 namespace PatternsRefresh
 {
@@ -49,8 +50,9 @@ namespace PatternsRefresh
             RunMementoBehavioralPattern(); //LD_MEMENTO_000
             RunObserverBehavioralPattern(); //LD_OBSERVER_000
             RunStateBehavioralPattern(); //LD_STATE_000
-*/
             RunStrategyBehavioralPattern(); //LD_STRATEGY_000
+*/
+            RunTemplateMethodBehavioralPattern(); //LD_TEMPLATEMETHOD_000
 
 
             Console.ReadLine();
@@ -438,6 +440,16 @@ namespace PatternsRefresh
 
             game.ComputerPlayer = new AdvancedComputerPlayer();
             game.Move();   //move using Advanced difficulty
+        }
+
+        //LD_TEMPLATEMETHOD_000
+        public static void RunTemplateMethodBehavioralPattern()
+        {
+            AbstractCarBuilder c = new PorcheBuilder();
+            c.BuildCar();
+
+            c = new BeetleBuilder();
+            c.BuildCar();
         }
 
 
